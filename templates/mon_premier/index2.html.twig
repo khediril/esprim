@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+{% block title %}index2{% endblock %}
+{% block body %}
+
+   <h1> {{ info }} </h1>
+   <a href="{{path('mapage1',{'nom':'toto','prenom':'titi'})}}">aller vers index </a>
+{% endblock %}

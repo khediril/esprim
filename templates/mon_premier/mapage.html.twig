@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+{% block title %}mapage{% endblock %}
+{% block body %}
+		<h1>
+			Information
+		</h1>
+		<ul>
+			<li>
+				Mon nom est :
+				{{n}}
+			</li>
+			<li>
+				Mon prenom est :
+				{{p}}
+			</li>
+		</ul>
+    <h1>Mes entiers</h1>
+<ul>
+    {% for x in tab %}
+        <li>entier : {{ x }}</li>
+    {% endfor %}
+</ul>
+
+<a href="{{path('index2')}}">aller vers index </a>
+ {% endblock %}
