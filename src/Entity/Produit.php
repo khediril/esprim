@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ProduitRepository")
@@ -23,6 +24,7 @@ class Produit
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\NotBlank
      */
     private $quatite;
 
@@ -33,6 +35,7 @@ class Produit
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Email(*     message = "The email '{{ value }}' is not a valid email.")
      */
     private $description;
 

@@ -3,5 +3,6 @@
 {% block body %}
 
    <h1> {{ info }} </h1>
+   <img src="{{asset('images/photo.jpeg')}}">
    <a href="{{path('mapage1',{'nom':'toto','prenom':'titi'})}}">aller vers index </a>
 {% endblock %}

@@ -17,6 +17,23 @@
             </tr>
         </tbody>
     </table>
+    <hr>
+    <table class="table">
+    {% for p in categorie.produits %}
+            <tr>
+                <td>{{ p.id }}</td>
+                <td>{{ p.name }}</td>
+                
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">aucun produit qui appartient à cette categorie</td>
+            </tr>
+        {% endfor %}
+        </table>
+
+
+    <hr>
 
     <a href="{{ path('categorie_index') }}">back to list</a>
 

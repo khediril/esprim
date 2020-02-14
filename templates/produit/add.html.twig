@@ -4,7 +4,12 @@
 
 {% block body %}
   <h1>Ajout d'un produit</h1>
-  Produit ajouté avec succé...!
-  Nom du produit : {{ prod.name }}<br>
-  Prix du produit : {{ prod.prix }}<br>
+ <p>Dans les données du produit il y a des erreurs</p>
+ <h2>Liste des erreurs</h2>
+ <ol>
+ {% for er in errors %}
+   <li>{{er.message}}</li>
+ {% endfor %}
+  </ol>
 {% endblock %}
+

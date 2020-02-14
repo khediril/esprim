@@ -12,6 +12,8 @@
         <td>{{ p.id }}  </td>
         <td><a href="{{path('showprod',{'id':p.id})}}">{{ p.name }} </a> </td>
         <td>{{ p.prix }}  </td>
+        <td>
+				{{ p.categorie.name }}</td>
         </tr>
     {% endfor %}
     
