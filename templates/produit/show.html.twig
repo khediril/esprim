@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}List Produit
+{% endblock %}
+
+{% block body %}
+	<h1>Affichage du produit
+		{{ p.name }}</h1>
+
+		<ul>
+
+			<li>Nom :
+				{{ p.name }}</li>
+			<li>quantite :
+				{{ p.quatite }}</li>
+			<li>Prix :
+				{{ p.prix }}</li>
+			<li>Description :
+				{{ p.description }}</li>
+
+		</ul>
+
+	{% endblock %}
